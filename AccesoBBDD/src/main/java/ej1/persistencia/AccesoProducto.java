@@ -55,6 +55,25 @@ public class AccesoProducto extends Conexion{
         abrirConexion();
         sentencia = miConexion.createStatement();
         int filasafectadas =sentencia.executeUpdate(sql);
+        //String sql2 = "INSERT INTO products (product_id, product_name, unit_price, units_in_stock,discontinued) " +
+        //                "VALUES " +
+        //                "(" + producto.getIdProducto() + ", '" + producto.getNombreProducto() + "', " + producto.getPrecioUnitario() + ", " + producto.getUnidadesStock() + ", 0)";
+    }
 
+    public void modificarUno(Producto producto) throws SQLException, ClassNotFoundException {
+        String sql = "UPDATE products " +
+                "SET product_name = '"+producto.getNombreProducto()+"', unit_price = "+producto.getPrecioUnitario()+", units_in_stock = "+producto.getUnidadesStock()+" "+
+                "WHERE product_id = "+producto.getIdProducto();
+
+        abrirConexion();
+        Statement sentencia = miConexion.createStatement();
+        int filasafectadas =sentencia.executeUpdate(sql);
+    }
+    public void BorrarUno(Producto producto) throws SQLException, ClassNotFoundException {
+        String sql = "DELETE FROM products " +
+                "WHERE product_id = " + producto.getIdProducto();
+        abrirConexion();
+        Statement sentencia = miConexion.createStatement();
+        int filasafectadas =sentencia.executeUpdate(sql);
     }
 }

@@ -27,7 +27,7 @@ public class Main {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-
+        /*
         try {
             accesoProducto.crearUno(81,"prueba2",21.3,12,1,1,"cantidad",1,1);
         } catch (SQLException e) {
@@ -35,7 +35,39 @@ public class Main {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+           */
+        try {
+            System.out.println(accesoProducto.obtenerUno(81));
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
 
+        try {
+            Producto producto = new Producto(81,"pruebamodificada",12.5,5);
+            accesoProducto.modificarUno(producto);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            System.out.println(accesoProducto.obtenerUno(81));
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            Producto producto = new Producto(81,"pruebamodificada",12.5,5);
+            accesoProducto.BorrarUno(producto);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         try {
             System.out.println(accesoProducto.obtenerUno(81));
         } catch (SQLException e) {
