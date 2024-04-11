@@ -1,0 +1,14 @@
+<div>
+    <label>Email:</label>
+    <input type="email" [(ngModel)]="email" />
+  </div>
+<div>
+  <label>Contraseña:</label>
+  <input type="password" [(ngModel)]="password" />
+</div>
+<div>
+  <label>Repita la contraseña:</label>
+  <input type="password" [(ngModel)]="repeatPassword" />
+</div>
+<button (click)="validatePassword()">Validar</button>
+<div>{{ mensaje }}</div>

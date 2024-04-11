@@ -1,0 +1,23 @@
+<h1>Ingreo de producto a stock</h1>
+<div>
+    <label>Descripcion:</label>
+    <input type="text" [(ngModel)]="descripcion" />
+  </div>
+  <div>
+    <label>Codigo:</label>
+    <input type="text" [(ngModel)]="codigo" />
+  </div>
+  <div>
+    <label>Precio Costo:</label>
+    <input type="number" [(ngModel)]="precioCosto" />
+  </div>
+<div>
+  <label>Precio Venta:</label>
+  <input type="number" [(ngModel)]="precioVenta" />
+</div>
+<div>
+  <label>Stock ideal:</label>
+  <input type="number" [(ngModel)]="stockIdeal" />
+</div>
+<button (click)="ingresar()">Ingresar</button>
+<div>{{ mensaje }}</div>
