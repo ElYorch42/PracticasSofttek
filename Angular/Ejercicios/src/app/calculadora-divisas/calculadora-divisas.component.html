@@ -1,0 +1,18 @@
+<div>
+    <label>Dinero a convertir:</label>
+    <input type="number" [(ngModel)]="dinero" />
+  </div>
+<div>
+    <label>Moneda inicial seleccionada: {{tipoMonedaInicial}}</label>
+    <button (click)="seleccionInicial('euro')">euro</button>
+    <button (click)="seleccionInicial('libra')">libra</button>
+    <button (click)="seleccionInicial('dolar')">dolar</button>
+</div>
+<div>
+    <label>Moneda a convertir seleccionada: {{tipoMonedaConversion}}</label>
+    <button (click)="seleccionConversion('euro')">euro</button>
+    <button (click)="seleccionConversion('libra')">libra</button>
+    <button (click)="seleccionConversion('dolar')">dolar</button>
+</div>
+<button (click)="calcular()">Calcular</button>
+<div>{{ mensaje }}</div>

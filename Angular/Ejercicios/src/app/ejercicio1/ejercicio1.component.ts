@@ -9,7 +9,7 @@ import { Temporada } from '../_modelo/temporada';
   styleUrl: './ejercicio1.component.css',
 })
 export class Ejercicio1Component {
-  temporada:Temporada=Temporada.Otoño;
+  temporada: Temporada = Temporada.Otoño;
 
   comprobarPersonaEj1() {
     let firstName: string;
@@ -41,31 +41,39 @@ export class Ejercicio1Component {
     }
   }
   ejercicio2() {
-    let x:number;
-    let y:number;
-    let a:number;
+    let x: number;
+    let y: number;
+    let a: number;
     x = 5;
     y = 7;
     a = x + y;
     console.log(a);
   }
 
-  whichMonths(season:Temporada) {
+  whichMonths(season: Temporada) {
     let monthsInSeason: string;
     switch (season) {
-    case Temporada.Otoño:
-    monthsInSeason = "September to November";
-    break;
-    case Temporada.Invierno:
-    monthsInSeason = "December to February";
-    break;
-    case Temporada.Primavera:
-    monthsInSeason = "March to May";
-    break;
-    case Temporada.Verano:
-    monthsInSeason = "June to August";
+      case Temporada.Otoño:
+        monthsInSeason = 'September to November';
+        break;
+      case Temporada.Invierno:
+        monthsInSeason = 'December to February';
+        break;
+      case Temporada.Primavera:
+        monthsInSeason = 'March to May';
+        break;
+      case Temporada.Verano:
+        monthsInSeason = 'June to August';
     }
     console.log(monthsInSeason);
+  }
+  ejercicio4() {
+    let randomNumbers:number[] = [];
+    let nextNumber;
+    for (let i = 0; i < 10; i++) {
+      nextNumber = Math.floor(Math.random() * (100 - 1)) + 1;
+      randomNumbers.push(nextNumber);
     }
-     
+    console.log(randomNumbers);
+  }
 }

@@ -1,1 +1,17 @@
-<p>calculadora works!</p>
+<div>
+    <label>Numero 1:</label>
+    <input type="number" [(ngModel)]="numero1" />
+  </div>
+<div>
+  <label>Numero 2:</label>
+  <input type="number" [(ngModel)]="numero2" />
+</div>
+<div>
+    <label>Calcular</label>
+    <button (click)="calcular('+')">+</button>
+    <button (click)="calcular('-')">-</button>
+    <button (click)="calcular('*')">*</button>
+    <button (click)="calcular('/')">/</button>
+</div>
+<div>{{ mensaje }}</div>
+
