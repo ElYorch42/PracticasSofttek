@@ -1,4 +1,4 @@
-package Ej1.modelo;
+package stream.modelo;
 
 
 import lombok.AllArgsConstructor;

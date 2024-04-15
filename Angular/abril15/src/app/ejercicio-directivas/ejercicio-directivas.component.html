@@ -1,0 +1,80 @@
+<h1>Arma tu Pc</h1>
+<label>Tipo de RAM:</label>
+@for (item of tamRAM; track $index) {
+<label> <input type="radio" name="itemRam" [value]="item" [(ngModel)]="tamRAMseleccionada"/> {{ item }} </label>
+}
+<br/>
+<label>Tipo de procesador:</label>
+<select id="CPU" [(ngModel)]="tipoProcesaddorseleccionada">
+  @for (item of tipoProcesaddor; track $index) {
+  <option [value]="item" >{{ item }}</option>
+  }
+</select>
+<br/>
+<label>Tarjeta Grafica</label>
+<input type="checkbox" name="Grafica" value="Grafica" />
+<br/>
+  <label>Disco duro:</label>
+  @for (item of DiscoDuro; track $index) {
+  <label> <input type="radio" name="itemDisco" [value]="item" [(ngModel)]="DiscoDuroseleccionada"/> {{ item }} </label>
+  }
+  <br>
+<label>Fuente de alimentacion:</label>
+<select id="Fuente" [(ngModel)]="FuentesDeAlimentacionseleccionada">
+  @for (item of FuentesDeAlimentacion; track $index) {
+  <option [value]="item" >{{ item }}</option>
+  }
+</select>
+<br/>
+<button (click)="mostrarOrdenador()">Mostrar informacion</button>
+<br/>
+<br/>
+<br/>
+<h1>Reserva de vuelos</h1>
+<label>Origen:</label>
+<select id="origen"  [(ngModel)]="vuelosOrigenseleccionada">
+  @for (item of vuelosOrigen; track $index) {
+  <option [value]="item">{{ item }}</option>
+  }
+</select>
+<br />
+<label>Destinos:</label>
+<select id="destino" [(ngModel)]="vuelosDestinosseleccionada">
+  @for (item of vuelosDestinos; track $index) {
+  <option [value]="item" >{{ item }}</option>
+  }
+</select>
+<br/>
+<label for="fechaIda">Fecha de ida:</label>
+<input type="date" id="fechaIda" name="fechaIda" [(ngModel)]="fechaIdaSeleccionada"/>
+<br/>
+<label for="fechaVuelta">Fecha de vuelta:</label>
+<input type="date" id="fechaVuelta" name="fechaVuelta" [(ngModel)]="fechaVueltaSeleccionada"/>
+<br/>
+<label for="numPas">Numero de pasajeros:</label>
+<input type="number" id="numPas" name="numPas" [(ngModel)]="numeroPasajerosSeleccionada"/>
+<br/>
+<button (click)="mostrarVuelos()">Mostrar informacion</button>
+<br>
+<br>
+<h1>Usando Directivas</h1>
+<label>Genero:</label>
+@for (item of genero; track $index) {
+<label> <input type="radio" name="itemRam" [value]="item" [(ngModel)]="generoSeleccionado"/> {{ item }} </label>
+}
+<br/>
+<label>Nacionalidades:</label>
+<select id="nacinalidades" [(ngModel)]="nacionalidadesSeleccionada">
+    @for (item of nacionalidades; track $index) {
+    <option [value]="item" >{{ item }}</option>
+    }
+  </select>
+<br/>
+<label>Lenguajes de programacion:</label>
+@for (item of lenguajesSeleccionados; track $index;) {
+    <label>{{item.nombre}}:
+    <input type="checkbox" name="Lenguajes" [value]="item.nombre" [(ngModel)]="item.seleccion"/>
+    </label>
+}
+<br/>
+<button (click)="mostrarDirectivas()">Mostrar informacion</button>

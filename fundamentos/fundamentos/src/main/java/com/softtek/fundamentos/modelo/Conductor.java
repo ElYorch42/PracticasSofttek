@@ -1,24 +1,20 @@
-package com.softtek.ejercicio3.modelo;
+package com.softtek.fundamentos.modelo;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Conductor {
+    @Autowired
     private IVehiculo vehiculo;
-
-    public Conductor(IVehiculo vehiculo) {
-        this.vehiculo = vehiculo;
-    }
-
-    public Conductor() {
-    }
 
     public String conducir() {
         return vehiculo.moverse();
-    }
-
-    public IVehiculo getVehiculo() {
-        return vehiculo;
-    }
-
-    public void setVehiculo(IVehiculo vehiculo) {
-        this.vehiculo = vehiculo;
     }
 }

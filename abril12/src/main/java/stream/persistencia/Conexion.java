@@ -1,4 +1,4 @@
-package Ej1.persistencia;
+package stream.persistencia;
 
 import lombok.NoArgsConstructor;
 
