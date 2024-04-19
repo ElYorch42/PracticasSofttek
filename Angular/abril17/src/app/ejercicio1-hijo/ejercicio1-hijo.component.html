@@ -1,0 +1,9 @@
+<p>{{mensaje}}</p>
+<ul>
+    @for (item of listaProductos; track $index) {
+        <li >
+            <input type="button" (click)="enviarProductocesta(item)" [value]="item">
+        </li>
+    }
+</ul>
+

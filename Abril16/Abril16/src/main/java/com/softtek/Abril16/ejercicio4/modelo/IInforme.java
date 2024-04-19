@@ -1,5 +1,5 @@
-package com.softtek.ejercicio5.modelo;
+package com.softtek.Abril16.ejercicio4.modelo;
 
 public interface IInforme {
-    public abstract String getInforme();
+    String getInforme();
 }

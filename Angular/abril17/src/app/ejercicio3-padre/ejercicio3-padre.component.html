@@ -1,0 +1,6 @@
+<app-ejercicio3-hijo (enviarLista)="recibirAsignaturas($event)"></app-ejercicio3-hijo>
+<ul>
+    @for (item of listaAsignaturas; track $index) {
+        <li>{{item}}</li>
+    }
+</ul>

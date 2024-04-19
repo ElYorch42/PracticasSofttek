@@ -1,4 +1,4 @@
-package com.softtek.fundamentos.modelo;
+package com.softtek.Abril16.ejercicio2.modelo;
 
 
 import lombok.AllArgsConstructor;
@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 @NoArgsConstructor
 @AllArgsConstructor
 @Data

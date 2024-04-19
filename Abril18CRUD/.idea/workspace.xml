@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c2788b92-b8c9-4ddf-b9c1-68df3aa0e08d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio1/modelo/Saludo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio2/modelo/Coche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio2/modelo/Conductor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio2/modelo/IVehiculo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio3/modelo/Coche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio3/modelo/ITaller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio3/modelo/SeguroCoche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio3/modelo/TallerMecanica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio3/modelo/TallerPintura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio4/modelo/Director.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio4/modelo/IEmpleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio4/modelo/IInforme.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio4/modelo/InformeTrimestre1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio4/modelo/InformeTrimestre2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio4/modelo/Jefe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio4/modelo/Secretario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio5/modelo/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio5/persistencia/AccesoDesarrollo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio5/persistencia/AccesoProduccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio5/persistencia/ClienteDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril16/Abril16/src/main/java/com/softtek/Abril16/ejercicio5/persistencia/IDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril18/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril18/.idea/Abril18.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril18/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril18/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril18/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril18/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril18/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril18/Abril18/src/main/java/com/softtek/Abril18/ej1/controlador/ControladorTarea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril18/Abril18/src/main/java/com/softtek/Abril18/ej1/modelo/Tarea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril18/Abril18/src/main/java/com/softtek/Abril18/ej1/repo/ITareaRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril18/Abril18/src/main/java/com/softtek/Abril18/ej1/repo/TareaRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril18/Abril18/src/main/java/com/softtek/Abril18/ej1/servicio/ITareaServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril18/Abril18/src/main/java/com/softtek/Abril18/ej1/servicio/TareaServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Abril18CRUD/src/main/java/com/softtek/Abril18CRUD/controlador/ControladorProductos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Abril18CRUD/src/main/java/com/softtek/Abril18CRUD/modelo/Producto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Abril18CRUD/src/main/java/com/softtek/Abril18CRUD/repo/ConexionRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Abril18CRUD/src/main/java/com/softtek/Abril18CRUD/repo/IProductosRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Abril18CRUD/src/main/java/com/softtek/Abril18CRUD/repo/ProductosRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Abril18CRUD/src/main/java/com/softtek/Abril18CRUD/servicio/IProductosServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Abril18CRUD/src/main/java/com/softtek/Abril18CRUD/servicio/ProductosServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril18EjercicioOpcionales/src/main/java/org/example/ejercicio1/vista/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Abril18EjercicioOpcionales/src/main/java/org/example/ejercicio2/vista/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AccesoBBDD/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AccesoBBDD/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../abril8/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../abril8/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../fundamentos/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_4_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__ch_qos_logback_logback_core_1_4_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_2_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_4_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_14_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_14_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__net_minidev_json_smart_2_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_20_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_20_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_assertj_assertj_core_3_24_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_mockito_mockito_core_5_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_5_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_objenesis_objenesis_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_ow2_asm_asm_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_projectlombok_lombok_1_18_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_2_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_springframework_boot_spring_boot_3_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_3_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_3_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_3_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_3_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_3_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_3_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_3_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_springframework_spring_aop_6_0_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_springframework_spring_beans_6_0_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_springframework_spring_context_6_0_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_springframework_spring_core_6_0_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_springframework_spring_expression_6_0_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_springframework_spring_jcl_6_0_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_springframework_spring_test_6_0_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/libraries/Maven__org_yaml_snakeyaml_1_33.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../fundamentos/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Abril18/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fundamentos/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../fundamentos/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2fJFlZy41bb8OYt2N2pOdTBaOUm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jorge.segoviac/Documents/Practicas/Abril18CRUD"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2788b92-b8c9-4ddf-b9c1-68df3aa0e08d" name="Changes" comment="" />
+      <created>1713511425339</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713511425339</updated>
+    </task>
+    <servers />
+  </component>
+</project>

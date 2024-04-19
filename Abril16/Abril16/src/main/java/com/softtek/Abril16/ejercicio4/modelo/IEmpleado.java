@@ -1,6 +1,6 @@
-package com.softtek.ejercicio5.modelo;
+package com.softtek.Abril16.ejercicio4.modelo;
 
 public interface IEmpleado {
-    public abstract String getTareas();
-    public abstract String getInforme();
+    String getTareas();
+    String getInforme();
 }

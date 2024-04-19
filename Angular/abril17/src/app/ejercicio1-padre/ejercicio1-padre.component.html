@@ -1,0 +1,7 @@
+<app-ejercicio1-hijo [mensaje]="ejercicio1MensajePadre" (enviarLista)="recibirProductos($event)"></app-ejercicio1-hijo>
+<ul>
+    @for (item of listaProductos; track $index) {
+        <li>{{item}}</li>
+    }
+</ul>
+

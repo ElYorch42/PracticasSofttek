@@ -1,5 +1,5 @@
-package com.softtek.ejercicio4.modelo;
+package com.softtek.Abril16.ejercicio3.modelo;
 
 public interface ITaller {
-    public abstract String reparar(Coche c);
+    String reparar(Coche c);
 }

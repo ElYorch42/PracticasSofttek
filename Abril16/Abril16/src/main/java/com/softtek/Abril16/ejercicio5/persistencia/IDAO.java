@@ -1,7 +1,8 @@
-package com.softtek.ejercicio6.persistencia;
+package com.softtek.Abril16.ejercicio5.persistencia;
 
-import com.softtek.ejercicio6.modelo.Cliente;
+
+import com.softtek.Abril16.ejercicio5.modelo.Cliente;
 
 public interface IDAO {
-    public abstract String insertar(Cliente c1);
+    String insertar(Cliente c1);
 }

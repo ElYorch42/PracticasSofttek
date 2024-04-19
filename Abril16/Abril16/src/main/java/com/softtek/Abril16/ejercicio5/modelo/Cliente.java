@@ -1,30 +1,16 @@
-package com.softtek.ejercicio6.modelo;
+package com.softtek.Abril16.ejercicio5.modelo;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
+
+@Component
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Cliente {
     private String nombre;
     private String nif;
 
-    public Cliente(String nombre, String nif) {
-        this.nombre = nombre;
-        this.nif = nif;
-    }
-
-    public Cliente() {
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getNif() {
-        return nif;
-    }
-
-    public void setNif(String nif) {
-        this.nif = nif;
-    }
 }

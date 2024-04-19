@@ -1,15 +1,16 @@
-package com.softtek.ejercicio5.modelo;
+package com.softtek.Abril16.ejercicio4.modelo;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+@NoArgsConstructor
+@AllArgsConstructor
 public class Jefe implements  IEmpleado{
-
+    @Autowired
     private IInforme informe;
-
-    public Jefe(IInforme informe) {
-        this.informe = informe;
-    }
-
-    public Jefe() {
-    }
 
     @Override
     public String getTareas() {

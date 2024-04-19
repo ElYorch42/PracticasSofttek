@@ -1,11 +1,16 @@
-package com.softtek.ejercicio4.modelo;
+package com.softtek.Abril16.ejercicio3.modelo;
 
-public class TallerMecanica implements ITaller{
+import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 
-    public TallerMecanica() {
-    }
+@Component
+@Primary
+@NoArgsConstructor
+public class TallerMecanica implements ITaller {
 
-    @Override
+
     public String reparar(Coche c) {
         return "coche "+c.getModelo()+" matricula:"+c.getMatricula()+" reparado";
     }

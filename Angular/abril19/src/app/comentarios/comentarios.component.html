@@ -1,0 +1,6 @@
+<app-comentarios-hijo (enviarLista)="recibirComentarios($event)"></app-comentarios-hijo>
+<ul>
+    @for (item of listaComentarios; track $index) {
+        <li>{{item}}</li>
+    }
+</ul>

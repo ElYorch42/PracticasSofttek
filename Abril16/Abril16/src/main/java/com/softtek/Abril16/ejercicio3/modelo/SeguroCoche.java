@@ -1,8 +1,15 @@
-package com.softtek.ejercicio4.modelo;
+package com.softtek.Abril16.ejercicio3.modelo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class SeguroCoche {
+    @Autowired
     private ITaller taller;
+
     private String aseguradora;
+
 
     public SeguroCoche(ITaller taller, String aseguradora) {
         this.taller = taller;

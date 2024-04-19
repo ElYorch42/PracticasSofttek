@@ -1,18 +1,18 @@
-package com.softtek.ejercicio5.modelo;
+package com.softtek.Abril16.ejercicio4.modelo;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+@NoArgsConstructor
+@AllArgsConstructor
 public class Secretario implements IEmpleado{
+    @Autowired
     private IInforme informe;
     private String empresa;
     private String email;
-
-    public Secretario(IInforme informe, String empresa, String email) {
-        this.informe = informe;
-        this.empresa = empresa;
-        this.email = email;
-    }
-
-    public Secretario() {
-    }
 
     @Override
     public String getTareas() {

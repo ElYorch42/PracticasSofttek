@@ -1,0 +1,6 @@
+<select name="Asignaturas" id="Asignaturas" [(ngModel)]="asignaturaSeleccionada">
+    @for (item of listaAsignaturas; track $index) {
+        <option [value]="item">{{item}}</option>
+    }
+</select>
+<button (click)="enviarAsignaturas()">Seleccionar</button>

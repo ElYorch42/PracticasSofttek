@@ -1,19 +1,21 @@
-package com.softtek.ejercicio5.modelo;
+package com.softtek.Abril16.ejercicio4.modelo;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
+@NoArgsConstructor
+@AllArgsConstructor
 public class InformeTrimestre1 implements IInforme{
 
     private String detalles;
 
-    public InformeTrimestre1(String detalles) {
-        this.detalles = detalles;
-    }
-
-    public InformeTrimestre1() {
-    }
-
     @Override
     public String getInforme() {
-        return "Informe2: "+detalles;
+        return "Informe: "+detalles;
     }
 
     public String getDetalles() {

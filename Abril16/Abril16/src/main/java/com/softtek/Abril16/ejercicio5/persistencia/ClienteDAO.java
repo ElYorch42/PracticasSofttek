@@ -1,26 +1,21 @@
-package com.softtek.ejercicio6.persistencia;
+package com.softtek.Abril16.ejercicio5.persistencia;
 
-import com.softtek.ejercicio6.modelo.Cliente;
+import com.softtek.Abril16.ejercicio5.modelo.Cliente;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class ClienteDAO {
+    @Autowired
     private IDAO conexion;
-
-    public ClienteDAO(IDAO conexion) {
-        this.conexion = conexion;
-    }
-
-    public ClienteDAO() {
-    }
 
     public String insertar(Cliente c1){
         return conexion.insertar(c1);
-    }
-
-    public IDAO getConexion() {
-        return conexion;
-    }
-
-    public void setConexion(IDAO conexion) {
-        this.conexion = conexion;
     }
 }
