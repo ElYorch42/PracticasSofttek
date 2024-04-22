@@ -1,0 +1,4 @@
+@for (item of listaInmuebles; track $index) {
+    <button class="boton" [routerLink]="['/articulo1',item.id]" >{{item.nombre}}</button>
+}
+

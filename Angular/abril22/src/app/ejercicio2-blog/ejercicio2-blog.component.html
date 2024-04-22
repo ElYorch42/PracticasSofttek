@@ -1,0 +1,16 @@
+<div class="container">
+    <h1 class="titulo">Tu Blog de Ciberseguridad</h1>
+    <button class="boton" (click)="crearArticulo()" >Alta Artículos</button>
+    <br>
+    <br>
+    <img src="https://www.dongee.com/tutoriales/content/images/2023/11/image-9.png" alt="Imagen de fondo" class="image">
+    <br>
+    @for (item of listaArticulos; track $index) {
+        <div class="card">
+            <img [src]="item.imagenURL" alt="Imagen del artículo">
+            <h2>{{item.titulo}}</h2>
+            <p>{{item.descripcion}}</p>
+            <button [routerLink]="['/articulo2',item.id]" >Mas informacion</button>
+        </div>
+    }
+</div>
