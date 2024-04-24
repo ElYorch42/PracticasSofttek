@@ -3,10 +3,12 @@ package com.softtek.Abril18CRUD.servicio;
 import com.softtek.Abril18CRUD.modelo.Producto;
 import com.softtek.Abril18CRUD.repo.IProductosRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
 import java.util.List;
 
+@Service
 public class ProductosServicio implements IProductosServicio{
 
     @Autowired

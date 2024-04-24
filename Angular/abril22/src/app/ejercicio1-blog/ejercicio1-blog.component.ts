@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Inmueble } from '../_modelo/inmueble';
+import { InmuebleService } from '../_servicio/inmueble.service';
 
 @Component({
   selector: 'app-ejercicio1-blog',
@@ -9,26 +11,11 @@ import { RouterLink } from '@angular/router';
   styleUrl: './ejercicio1-blog.component.css'
 })
 export class Ejercicio1BlogComponent {
-  listaInmuebles = [
-    {
-        id: 1,
-        nombre: "Casa en la playa"
-    },
-    {
-        id: 2,
-        nombre: "Apartamento en el centro de la ciudad"
-    },
-    {
-        id: 3,
-        nombre: "Finca en el campo"
-    },
-    {
-        id: 4,
-        nombre: "Piso en zona residencial"
-    },
-    {
-        id: 5,
-        nombre: "Chalet en las montañas"
+    listaInmuebles:Inmueble[] =[];
+
+    constructor(private inmuebleServicio:InmuebleService) {}
+
+    ngOnInit(): void {
+        this.listaInmuebles = this.inmuebleServicio.obtenerTodos();
     }
-];
 }
