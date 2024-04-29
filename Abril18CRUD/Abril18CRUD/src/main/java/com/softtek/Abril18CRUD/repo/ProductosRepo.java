@@ -16,7 +16,7 @@ public class ProductosRepo extends ConexionRepo implements IProductosRepo{
     @Override
     public List<Producto> obtenerTodos() throws ClassNotFoundException, SQLException {
 
-        String sql = "Select product_id, product_name, unit_price, units_in_stock from products";
+        String sql = "Select product_id, product_name, unit_price, units_in_stock, category_id from products";
         List<Producto> productos = new ArrayList<>();
         abrirConexion();
         Statement sentencia = miConexion.createStatement();
@@ -35,7 +35,7 @@ public class ProductosRepo extends ConexionRepo implements IProductosRepo{
 
     @Override
     public Producto obtenerUno(int id) throws ClassNotFoundException, SQLException {
-        String sql = "Select product_id, product_name, unit_price, units_in_stock from products where product_id = "+id;
+        String sql = "Select product_id, product_name, unit_price, units_in_stock, category_id from products where product_id = "+id;
         List<Producto> productos = new ArrayList<>();
         abrirConexion();
         Statement sentencia = miConexion.createStatement();
@@ -53,9 +53,9 @@ public class ProductosRepo extends ConexionRepo implements IProductosRepo{
     @Override
     public Producto insertarProducto(Producto producto) throws ClassNotFoundException, SQLException {
         if (!comprobarProducto(producto.getIdProducto())) {
-            String sql = "INSERT INTO products (product_id, product_name, unit_price, units_in_stock,discontinued) " +
+            String sql = "INSERT INTO products (product_id, product_name, unit_price, units_in_stock, category_id, discontinued) " +
                     "VALUES " +
-                    "(" + producto.getIdProducto() + ", '" + producto.getNombreProducto() + "', " + producto.getPrecioUnitario() + ", " + producto.getUnidadesStock() + ", 0)";
+                    "(" + producto.getIdProducto() + ", '" + producto.getNombreProducto() + "', " + producto.getPrecioUnitario() + ", " + producto.getUnidadesStock() + ", "+ producto.getIdCategoria() + ", 0)";
 
 
             abrirConexion();
@@ -74,7 +74,7 @@ public class ProductosRepo extends ConexionRepo implements IProductosRepo{
     public Producto actualizarProducto(Producto producto) throws ClassNotFoundException, SQLException {
         if (comprobarProducto(producto.getIdProducto())){
             String sql = "UPDATE products SET product_id=" + producto.getIdProducto() + ", product_name='" + producto.getNombreProducto() +
-                    "', unit_price=" + producto.getPrecioUnitario() + ", units_in_stock=" + producto.getUnidadesStock() + " WHERE " +
+                    "', unit_price=" + producto.getPrecioUnitario() + ", units_in_stock=" + producto.getUnidadesStock() +", category_id="+producto.getIdCategoria()+ " WHERE " +
                     "product_id=" + producto.getIdProducto();
             abrirConexion();
             Statement sentencia = miConexion.createStatement();

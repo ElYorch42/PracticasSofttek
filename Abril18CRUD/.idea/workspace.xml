@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2788b92-b8c9-4ddf-b9c1-68df3aa0e08d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Abril18CRUD/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Abril18CRUD/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abril18CRUD/src/main/java/com/softtek/Abril18CRUD/controlador/ControladorProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/Abril18CRUD/src/main/java/com/softtek/Abril18CRUD/controlador/ControladorProductos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abril18CRUD/src/main/java/com/softtek/Abril18CRUD/repo/ConexionRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Abril18CRUD/src/main/java/com/softtek/Abril18CRUD/repo/ConexionRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Abril18CRUD/src/main/java/com/softtek/Abril18CRUD/repo/ProductosRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Abril18CRUD/src/main/java/com/softtek/Abril18CRUD/repo/ProductosRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Abril18CRUD/src/main/java/com/softtek/Abril18CRUD/servicio/ProductosServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Abril18CRUD/src/main/java/com/softtek/Abril18CRUD/servicio/ProductosServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular/abril22/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular/abril22/angular.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +44,29 @@
     "Application.Abril18CrudApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jorge.segoviac/Documents/Abril18Producto-master/Abril18Producto-master"
+    "last_opened_file_path": "C:/Users/jorge.segoviac/Documents/Practicas/fundamentos_JPA"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Abril18CrudApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.softtek.Abril18CRUD.Abril18CrudApplication" />
+      <module name="Abril18CRUD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.softtek.Abril18CRUD.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Abril18CrudApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/productos")
+@CrossOrigin(origins = "http://localhost:4200")
 public class ControladorProductos {
     @Autowired
     private ProductosServicio servicio;
@@ -17,7 +18,6 @@ public class ControladorProductos {
 
     @GetMapping
     public List<Producto> obtenerTodos() throws SQLException, ClassNotFoundException {
-
         return servicio.obtenerTodos();
     }
     @GetMapping("/{id}")

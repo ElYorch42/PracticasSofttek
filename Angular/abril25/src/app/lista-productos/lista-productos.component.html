@@ -1,0 +1,8 @@
+<ul>
+    @for (item of listaProductos; track $index) {
+        <li>
+            idProducto:{{item.idProducto}} - nombre:{{item.nombreProducto}} - precio:{{item.precioUnitario}} - unidades:{{item.unidadesStock}} - idCategoria:{{item.idCategoria}}
+        </li>
+    }
+</ul>
+
