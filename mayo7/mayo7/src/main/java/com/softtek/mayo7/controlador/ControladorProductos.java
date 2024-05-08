@@ -1,7 +1,8 @@
-package com.softtek.Abril18CRUD.controlador;
+package com.softtek.mayo7.controlador;
 
-import com.softtek.Abril18CRUD.modelo.Producto;
-import com.softtek.Abril18CRUD.servicio.ProductosServicio;
+
+import com.softtek.mayo7.modelo.Producto;
+import com.softtek.mayo7.servicio.ProductosServicio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,7 +11,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/productos")
-@CrossOrigin(origins = "http://localhost:4200")
 public class ControladorProductos {
     @Autowired
     private ProductosServicio servicio;
@@ -26,14 +26,14 @@ public class ControladorProductos {
     }
     @PostMapping
     public Producto insertarProducto(@RequestBody Producto producto) throws SQLException, ClassNotFoundException {
-        return servicio.insertarProducto(producto);
+        return servicio.insertar(producto);
     }
     @PutMapping
     public Producto actualizarProducto(@RequestBody Producto productos) throws SQLException, ClassNotFoundException {
-        return servicio.actualizarProducto(productos);
+        return servicio.actualizar(productos);
     }
     @DeleteMapping("/{id}")
     public void borrarProducto(@PathVariable int id) throws SQLException, ClassNotFoundException {
-        servicio.borrarProducto(id);
+        servicio.eliminar(id);
     }
 }

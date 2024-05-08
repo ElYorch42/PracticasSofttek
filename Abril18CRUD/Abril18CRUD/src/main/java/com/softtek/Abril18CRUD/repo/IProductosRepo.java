@@ -11,4 +11,5 @@ public interface IProductosRepo {
     public Producto insertarProducto(Producto producto) throws ClassNotFoundException, SQLException;
     public Producto actualizarProducto(Producto producto) throws ClassNotFoundException, SQLException;
     public void borrarProducto(int id) throws ClassNotFoundException, SQLException;
+    int ultimoId() throws ClassNotFoundException, SQLException;
 }

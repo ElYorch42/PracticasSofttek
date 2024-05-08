@@ -1,7 +1,6 @@
 package com.softtek.mayo7Refactorizacion.repositorio;
 
-import com.softtek.mayo7Refactorizacion.modelo.Producto;
-import org.springframework.data.jpa.repository.JpaRepository;
+import com.softtek.mayo7Refactorizacion.modelo.Lugar;
 
-public interface IProductosRepo<T, ID> extends IGenericoRepo<T, ID> {
+public interface ILugaresRepo extends IGenericoRepo<Lugar, Integer> {
 }

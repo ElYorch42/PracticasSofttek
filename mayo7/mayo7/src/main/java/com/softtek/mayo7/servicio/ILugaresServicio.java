@@ -2,19 +2,20 @@ package com.softtek.mayo7.servicio;
 
 
 
+import com.softtek.mayo7.modelo.Lugar;
 import com.softtek.mayo7.modelo.Producto;
 
 import java.util.List;
 
-public interface IProductosServicio {
+public interface ILugaresServicio {
 
-    List<Producto> obtenerTodos();
+    List<Lugar> obtenerTodos();
 
-    Producto obtenerUno(int id);
+    Lugar obtenerUno(int id);
 
-    Producto insertar(Producto producto);
+    Lugar insertar(Lugar lugar);
 
-    Producto actualizar(Producto producto);
+    Lugar actualizar(Lugar lugar);
 
     void eliminar(int id);
 }

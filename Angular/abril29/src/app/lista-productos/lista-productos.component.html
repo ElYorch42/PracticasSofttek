@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Stock</th>
+        <th>Categoria</th>
+    </tr>
+        @for (item of listaProductos; track $index) {
+            <tr>
+            <td>{{item.idProducto}}</td>
+            <td>{{item.nombreProducto}}</td>
+            <td>{{item.precioUnitario}}</td>
+            <td>{{item.unidadesStock}}</td>
+            <td>{{item.idCategoria}}</td>
+            <td><button [routerLink]="['edicion',item.idProducto]">Modificar</button></td>
+            <td><button (click)="eliminar(item.idProducto)">Eliminar</button></td>
+        </tr>
+        }
+</table>
+<button routerLink="alta">Alta nuevo producto</button>
+<router-outlet ></router-outlet>

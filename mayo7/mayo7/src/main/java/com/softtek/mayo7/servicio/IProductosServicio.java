@@ -1,21 +1,20 @@
-package com.softtek.Abril18CRUD.servicio;
+package com.softtek.mayo7.servicio;
 
-import com.softtek.Abril18CRUD.modelo.Producto;
-import com.softtek.Abril18CRUD.repo.IProductosRepo;
-import org.springframework.beans.factory.annotation.Autowired;
 
-import java.sql.SQLException;
+
+import com.softtek.mayo7.modelo.Producto;
+
 import java.util.List;
 
 public interface IProductosServicio {
 
-    public List<Producto> obtenerTodos() throws ClassNotFoundException, SQLException;
+    List<Producto> obtenerTodos();
 
-    public Producto obtenerUno(int id) throws ClassNotFoundException, SQLException;
+    Producto obtenerUno(int id);
 
-    public Producto insertarProducto(Producto producto) throws ClassNotFoundException, SQLException;
+    Producto insertar(Producto producto);
 
-    public Producto actualizarProducto(Producto producto) throws ClassNotFoundException, SQLException;
+    Producto actualizar(Producto producto);
 
-    public void borrarProducto(int id) throws ClassNotFoundException, SQLException;
+    void eliminar(int id);
 }

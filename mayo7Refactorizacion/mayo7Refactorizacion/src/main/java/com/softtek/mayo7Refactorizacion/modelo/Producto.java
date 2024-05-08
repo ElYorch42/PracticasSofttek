@@ -1,4 +1,4 @@
-package com.softtek.mayo7.modelo;
+package com.softtek.mayo7Refactorizacion.modelo;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

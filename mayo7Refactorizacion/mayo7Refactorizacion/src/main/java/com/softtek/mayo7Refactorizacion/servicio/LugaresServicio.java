@@ -1,22 +1,20 @@
 package com.softtek.mayo7Refactorizacion.servicio;
 
 
-import com.softtek.mayo7Refactorizacion.modelo.Producto;
+import com.softtek.mayo7Refactorizacion.modelo.Lugar;
 import com.softtek.mayo7Refactorizacion.repositorio.IGenericoRepo;
-import com.softtek.mayo7Refactorizacion.repositorio.IProductosRepo;
+import com.softtek.mayo7Refactorizacion.repositorio.ILugaresRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
-public class ProductosServicio extends CRUDImpl<Producto, Integer> implements IProductosServicio{
+public class LugaresServicio extends CRUDImpl<Lugar, Integer> implements ILugaresServicio{
 
     @Autowired
-    private IProductosRepo repo;
+    private ILugaresRepo repo;
 
     @Override
-    protected IGenericoRepo<Producto, Integer> getRepo() {
+    protected IGenericoRepo<Lugar, Integer> getRepo() {
         return repo;
     }
 

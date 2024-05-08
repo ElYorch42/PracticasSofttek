@@ -29,7 +29,7 @@ public class ProductosRepo extends ConexionRepo implements IProductosRepo{
                     resultado.getInt("units_in_stock"),
                     resultado.getInt("category_id")));
         }
-
+        System.out.println(ultimoId()+1);
         return productos;
     }
 
@@ -55,7 +55,7 @@ public class ProductosRepo extends ConexionRepo implements IProductosRepo{
         if (!comprobarProducto(producto.getIdProducto())) {
             String sql = "INSERT INTO products (product_id, product_name, unit_price, units_in_stock, category_id, discontinued) " +
                     "VALUES " +
-                    "(" + producto.getIdProducto() + ", '" + producto.getNombreProducto() + "', " + producto.getPrecioUnitario() + ", " + producto.getUnidadesStock() + ", "+ producto.getIdCategoria() + ", 0)";
+                    "(" + (ultimoId()+1) + ", '" + producto.getNombreProducto() + "', " + producto.getPrecioUnitario() + ", " + producto.getUnidadesStock() + ", "+ producto.getIdCategoria() + ", 0)";
 
 
             abrirConexion();
@@ -103,6 +103,18 @@ public class ProductosRepo extends ConexionRepo implements IProductosRepo{
         }
     }
 
+    @Override
+    public int ultimoId() throws ClassNotFoundException, SQLException {
+        abrirConexion();
+
+        String sql = "Select MAX(product_id) AS ultimo_id from products;";
+
+        Statement sentencia = miConexion.createStatement();
+        ResultSet resultado = sentencia.executeQuery(sql);
+        resultado.next();
+        return resultado.getInt(1);
+    }
+
     public boolean comprobarProducto(int idProducto) throws ClassNotFoundException, SQLException {
         abrirConexion();
 
@@ -116,7 +128,5 @@ public class ProductosRepo extends ConexionRepo implements IProductosRepo{
 
         int cantidadEncontrados = resultado.getInt(1);
         return cantidadEncontrados > 0;
-
-
     }
 }

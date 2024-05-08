@@ -2,9 +2,7 @@ package com.softtek.mayo7Refactorizacion.servicio;
 
 
 
-import com.softtek.mayo7Refactorizacion.modelo.Producto;
+import com.softtek.mayo7Refactorizacion.modelo.Lugar;
 
-import java.util.List;
-
-public interface IProductosServicio extends ICRUD<Producto, Integer>{
+public interface ILugaresServicio extends ICRUD<Lugar, Integer>{
 }

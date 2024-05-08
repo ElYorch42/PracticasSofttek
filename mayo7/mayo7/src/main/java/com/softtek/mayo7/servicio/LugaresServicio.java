@@ -1,39 +1,40 @@
 package com.softtek.mayo7.servicio;
 
 
+import com.softtek.mayo7.modelo.Lugar;
 import com.softtek.mayo7.modelo.Producto;
+import com.softtek.mayo7.repositorio.ILugaresRepo;
 import com.softtek.mayo7.repositorio.IProductosRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.sql.SQLException;
 import java.util.List;
 
 @Service
-public class ProductosServicio implements IProductosServicio{
+public class LugaresServicio implements ILugaresServicio{
 
     @Autowired
-    private IProductosRepo repo;
+    private ILugaresRepo repo;
 
 
     @Override
-    public List<Producto> obtenerTodos() {
+    public List<Lugar> obtenerTodos() {
         return repo.findAll();
     }
 
     @Override
-    public Producto obtenerUno(int id) {
+    public Lugar obtenerUno(int id) {
         return repo.findById(id).orElse(null);
     }
 
     @Override
-    public Producto insertar(Producto producto) {
-        return repo.save(producto);
+    public Lugar insertar(Lugar lugar) {
+        return repo.save(lugar);
     }
 
     @Override
-    public Producto actualizar(Producto producto) {
-        return repo.save(producto);
+    public Lugar actualizar(Lugar lugar) {
+        return repo.save(lugar);
     }
 
     @Override

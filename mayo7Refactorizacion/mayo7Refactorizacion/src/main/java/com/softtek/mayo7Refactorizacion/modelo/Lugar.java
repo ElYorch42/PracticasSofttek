@@ -9,14 +9,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "Productos")
-public class Producto {
+@Table(name = "Lugares")
+public class Lugar {
     @Id
     @GeneratedValue
-    private int idProducto;
-    @Column(length = 20, nullable = false)
-    private String nombreProducto;
-    private double precioUnitario;
-    private int unidadesStock;
-    private int idCategoria;
+    private int idLugar;
+    @Column(length = 40, nullable = false)
+    private String nombre;
+
 }

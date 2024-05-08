@@ -1,8 +1,8 @@
-package com.softtek.mayo7.controlador;
+package com.softtek.mayo7Refactorizacion.controlador;
 
 
-import com.softtek.mayo7.modelo.Producto;
-import com.softtek.mayo7.servicio.ProductosServicio;
+import com.softtek.mayo7Refactorizacion.modelo.Producto;
+import com.softtek.mayo7Refactorizacion.servicio.ProductosServicio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,11 +18,11 @@ public class ControladorProductos {
 
     @GetMapping
     public List<Producto> obtenerTodos() throws SQLException, ClassNotFoundException {
-        return servicio.obtenerTodos();
+        return servicio.consultarTodos();
     }
     @GetMapping("/{id}")
     public Producto obtenerUno(@PathVariable int id) throws SQLException, ClassNotFoundException {
-        return servicio.obtenerUno(id);
+        return servicio.consultarUno(id);
     }
     @PostMapping
     public Producto insertarProducto(@RequestBody Producto producto) throws SQLException, ClassNotFoundException {
@@ -30,7 +30,7 @@ public class ControladorProductos {
     }
     @PutMapping
     public Producto actualizarProducto(@RequestBody Producto productos) throws SQLException, ClassNotFoundException {
-        return servicio.actualizar(productos);
+        return servicio.modificar(productos);
     }
     @DeleteMapping("/{id}")
     public void borrarProducto(@PathVariable int id) throws SQLException, ClassNotFoundException {
