@@ -1,0 +1,20 @@
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Especialidad</th>
+    </tr>
+        @for (item of listaProfesores; track $index) {
+            <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.nombre}}</td>
+            <td>{{item.correo}}</td>
+            <td>{{item.especialidad}}</td>
+            <td><button [routerLink]="['edicion',item.id]">Modificar</button></td>
+            <td><button (click)="eliminar(item.id)">Eliminar</button></td>
+        </tr>
+        }
+</table>
+<button routerLink="formulario">Crear profesor</button>
+<router-outlet ></router-outlet>

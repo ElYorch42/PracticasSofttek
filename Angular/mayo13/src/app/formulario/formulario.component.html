@@ -1,0 +1,19 @@
+<div>
+    <form [formGroup]="form" #frmProfesor="ngForm" (ngSubmit)="aceptar()">
+        @if (edicion) {
+            <label for="">Id</label>
+            <input placeholder="Id" [readOnly]="true" formControlName="id">
+        }
+         <label for="">Nombre</label>
+         <input placeholder="Nombre" required formControlName="nombre">
+         <label for="">Correo</label>
+         <input placeholder="Correo" required formControlName="correo">
+         <label for="">Especialidad</label>
+         <input placeholder="Especialidad" required formControlName="especialidad">
+         
+         <button type="submit" [disabled]="frmProfesor.invalid">Aceptar</button>
+         <button type="button" routerLink="" >Cancelar</button>
+ 
+     </form>
+ </div>
+ 
