@@ -23,7 +23,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 @Component
 @RequiredArgsConstructor
-public class JwtAutenticationFilter extends OncePerRequestFilter {
+public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     /*
     * Recupere el correo electrónico del usuario analizando el token de portador y posteriormente busque

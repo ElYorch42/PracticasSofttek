@@ -1,2 +1,10 @@
-package com.softtek.mayo16.repositorio;public interface UserRepository {
+package com.softtek.mayo16.repositorio;
+
+import com.softtek.mayo16.modelo.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface UserRepository extends JpaRepository<User,Integer> {
+    Optional<User> findByEmail(String email);
 }

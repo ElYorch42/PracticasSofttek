@@ -1,2 +1,14 @@
-package com.softtek.mayo16.dao.response;public class Contenido {
+package com.softtek.mayo16.dao.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+@Builder
+public class Contenido {
+    private String Contenido;
 }

@@ -1,2 +1,14 @@
-package com.softtek.mayo16.dao.response;public class JwtAuthenticationResponse {
+package com.softtek.mayo16.dao.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class JwtAuthenticationResponse {
+    private String token;
 }
