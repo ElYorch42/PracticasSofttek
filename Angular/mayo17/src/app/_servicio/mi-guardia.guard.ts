@@ -11,7 +11,7 @@ export const miGuardiaGuard: CanActivateFn = (route, state) => {
   const jwtHelper = inject(JwtHelperService);
 
   let rpta = loginService.estaLogeado();
-
+  
   if (!rpta) {
     console.log('no esta logeado');
     loginService.cerrarSesion();
